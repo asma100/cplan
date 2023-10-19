@@ -12,7 +12,7 @@ int empty(char *input)
 
 	while (*input)
 	{
-		if (!isspace(*input))
+		if (isspace(*input)!)
 			return (0);
 		input++;
 	}
@@ -64,7 +64,7 @@ void inputtop(char *input, size_t s, int status) {
 		if (empty(input) == 1)
 		{
 			free(input);
-			return ;
+			exit(0);
 		}
 
 

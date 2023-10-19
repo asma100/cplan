@@ -32,7 +32,7 @@ return (tok_counter);
 
 
 
-voide  free_after_exe(char *input, char **arr,int u)
+void  free_after_exe(char *input, char **arr,int u)
 {
 int i;
 for (i = 0; i < u; i++)

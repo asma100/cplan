@@ -8,6 +8,6 @@ char *input_cp = strdup(input);
   /*handle_inputerror(input, input_cp);*/
 tok_counter = counter(char *input, const char *delim);
 arr = split(char *input_cp, const char *delim, tok_counter);
-executop(arr);
+execmd(arr);
 free_after_exe(input, arr);
 }

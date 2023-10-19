@@ -16,7 +16,8 @@ return;
 
 int counter(char *input, const char *delim)
 {
-  tok = strtok(input, delim);
+char *tok; 
+tok = strtok(input, delim);
 while (tok != NULL)
 {
 tok_counter++;
@@ -30,7 +31,7 @@ return (tok_counter);
 
  char **split(char *input_cp, const char *delim,int tok_counter)
 {
-  
+ char *tok;
 arr = malloc(sizeof(char *) * tok_counter);
 if (arr == NULL)
 {

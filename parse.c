@@ -7,7 +7,7 @@ char **arr = NULL;
 int u, j;
 char *tok;
 char *input_cp = strdup(input);
-  /*handle_inputerror(input, input_cp);*/
+handle_inputerror(input, input_cp);
 tok_counter = counter(input, delim);
 arr = malloc(sizeof(char *) * tok_counter);
 if (arr == NULL)

@@ -1,9 +1,9 @@
 void Parse(char *input, const char *delim)
 {
-char *tok;
+
 int tok_counter = 0;
 char **arr = NULL;
-int u, i, j;
+
 char *input_cp = strdup(input);
   /*handle_inputerror(input, input_cp);*/
 tok_counter = counter(char *input, const char *delim);

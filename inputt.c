@@ -60,4 +60,3 @@ void inputtop(char *input, size_t s, int status) {
 	}
 	free(input);
 }
-

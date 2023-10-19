@@ -10,5 +10,5 @@ char *input_cp = strdup(input);
 tok_counter = counter(input, delim);
 arr = split(input_cp, delim, tok_counter);
 execmd(arr);
-free_after_exe(input, arr);
+free_after_exe(input, arr,u);
 }

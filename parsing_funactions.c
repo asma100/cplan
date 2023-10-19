@@ -17,6 +17,7 @@ return;
 
 int counter(char *input, const char *delim)
 {
+int tok_counter;
 char *tok; 
 tok = strtok(input, delim);
 while (tok != NULL)

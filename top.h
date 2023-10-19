@@ -19,6 +19,10 @@ void print_top(char *top);
 void inputtop (char *input, size_t s, int status);
 void env_builtin();
 int empty(char *input);
-
-
+void execmd(char **argv);
+void handle_inputerror(char *input, char *input_cp);
+int counter(char *input, const char *delim);
+char **split(char *input_cp, const char *delim,int tok_counter);
+voide  free_after_exe(char *input, char **arr);
+void Parse(char *input, const char *delim);
 #endif

@@ -1,10 +1,6 @@
 #include "top.h"
 
-/**
- * empty - function for the user input handling
- * @input: size of the input
- * Return: int
-*/
+
 int empty(char *input)
 {
 	if (input == NULL)
@@ -12,29 +8,21 @@ int empty(char *input)
 
 	while (*input)
 	{
-		if (isspace(*input)!)
+		if (!isspace(*input))
 			return (0);
 		input++;
 	}
 
 	return (1);
 }
-/**
- * inputtop - function for the user input handling
- * @s: size of the input
- * @input: value
- * @status:0,1
- * Return: null
-*/
+
 void inputtop(char *input, size_t s, int status) {
 	ssize_t checkline;
-     /*const char *delim = " /t/n";*/
 	char exitstatus[] = "/bin/ls: cannot access '/test_hbtn': No such file or directory\n";
 
 	checkline = getline(&input, &s, stdin);
 	if (checkline == -1) {
 		if (feof(stdin)) {
-			free(input);
 			exit(EXIT_SUCCESS);
 		} else {
 			perror("Error reading input:");
@@ -57,7 +45,7 @@ void inputtop(char *input, size_t s, int status) {
 	{
 		env_builtin();
 		free(input);
-		exit(0);
+		exit (0);
 	}
 	else
 	{
@@ -68,7 +56,8 @@ void inputtop(char *input, size_t s, int status) {
 		}
 
 
-		/*Parse(input, delim);*/
+		/*call your function here*/
 	}
 	free(input);
 }
+

@@ -30,8 +30,9 @@ return (tok_counter);
 
 
  char **split(char *input_cp, const char *delim,int tok_counter)
-{
- char *tok;
+{ 
+int u, j;
+char *tok;
 arr = malloc(sizeof(char *) * tok_counter);
 if (arr == NULL)
 {
@@ -65,6 +66,7 @@ return (arr);
 
 voide  free_after_exe(char *input, char **arr)
 {
+int i;
 for (i = 0; i < u; i++)
 {
 free(arr[i]);

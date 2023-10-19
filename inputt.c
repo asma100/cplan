@@ -34,6 +34,7 @@ void inputtop(char *input, size_t s, int status) {
 	checkline = getline(&input, &s, stdin);
 	if (checkline == -1) {
 		if (feof(stdin)) {
+			free(input);
 			exit(EXIT_SUCCESS);
 		} else {
 			perror("Error reading input:");
@@ -56,7 +57,7 @@ void inputtop(char *input, size_t s, int status) {
 	{
 		env_builtin();
 		free(input);
-		exit (0);
+		return ;
 	}
 	else
 	{

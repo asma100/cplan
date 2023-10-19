@@ -57,14 +57,14 @@ void inputtop(char *input, size_t s, int status) {
 	{
 		env_builtin();
 		free(input);
-		return ;
+		exit(0);
 	}
 	else
 	{
 		if (empty(input) == 1)
 		{
 			free(input);
-			exit(0);
+			return ;
 		}
 
 

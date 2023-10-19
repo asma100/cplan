@@ -23,6 +23,6 @@ void execmd(char **argv);
 void handle_inputerror(char *input, char *input_cp);
 int counter(char *input, const char *delim);
 char **split(char *input_cp, const char *delim,int tok_counter);
-void  free_after_exe(char *input, char **arr, u);
+void  free_after_exe(char *input, char **arr,int u);
 void Parse(char *input, const char *delim);
 #endif

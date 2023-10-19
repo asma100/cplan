@@ -1,4 +1,5 @@
- void handle_inputerror(char *input, char *input_cp)
+#include "top.h"
+void handle_inputerror(char *input, char *input_cp)
 {
 if (input_cp == NULL)
 {

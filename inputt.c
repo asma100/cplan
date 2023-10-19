@@ -28,6 +28,7 @@ int empty(char *input)
 */
 void inputtop(char *input, size_t s, int status) {
 	ssize_t checkline;
+        const char *delim = " /t/n";
 	char exitstatus[] = "/bin/ls: cannot access '/test_hbtn': No such file or directory\n";
 
 	checkline = getline(&input, &s, stdin);
@@ -66,7 +67,7 @@ void inputtop(char *input, size_t s, int status) {
 		}
 
 
-		/*call your function here*/
+		Parse(input, delim);
 	}
 	free(input);
 }
